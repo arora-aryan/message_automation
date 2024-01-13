@@ -45,5 +45,6 @@ def send_email(service, sender, to, subject, message_text):
 
     print(f"Message Id: {message['id']}")
 
-service = getService()
-send_email(service, "arora.aryan23@gmail.com", "aryanarora@ucla.edu", "Hello", "WYD")
+def sendEmail(email_from, email_to, email_content, email_subject):
+    service = getService()
+    send_email(service, email_from, email_to, email_subject, email_content)
