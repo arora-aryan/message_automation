@@ -1,1 +1,3 @@
-API_KEY = "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"
+import os
+
+API_KEY = os.environ.get('OPENAI_API_KEY')
